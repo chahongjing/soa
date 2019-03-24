@@ -23,7 +23,7 @@
     </bean>
     <!--这个是队列目的地，点对点的  文本信息-->
     <!--<bean id="topicTextDestination" class="org.apache.activemq.command.ActiveMQTopic">-->
-        <!--<constructor-arg value="topic_text"/>-->
+    <!--<constructor-arg value="topic_text"/>-->
     <!--</bean>-->
     <!-- Spring提供的JMS工具类，它可以进行消息发送、接收等 -->
     <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">

@@ -28,6 +28,7 @@
         <dubbo>2.5.3</dubbo>
         <jms>2.0.1</jms>
         <activemq>5.13.4</activemq>
+        <servlet>2.5</servlet>
         <junit>4.11</junit>
         <project.version>1.0</project.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -37,6 +38,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet}</version>
+            </dependency>
             <dependency>
                 <groupId>com.zjy</groupId>
                 <artifactId>api</artifactId>

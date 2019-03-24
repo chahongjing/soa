@@ -13,11 +13,15 @@
     <version>${project.version}</version>
     <packaging>war</packaging>
 
-    <name>web Maven Webapp</name>
+    <name>web</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
     <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
