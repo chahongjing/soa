@@ -1,0 +1,1 @@
+java -jar provider-slave-1.0.jar > "provider.log" 2>&1

@@ -1,1 +1,1 @@
-java -jar provider-1.0.jar > "provider.log" 2>&1
+java -jar provider-master-1.0.jar > "provider.log" 2>&1

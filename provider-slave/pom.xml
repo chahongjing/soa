@@ -143,6 +143,25 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/main/assembly/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -157,6 +176,11 @@
             <resource>
                 <targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
                 <directory>src/main/resources/</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <targetPath>${project.build.directory}/</targetPath>
+                <directory>src/main/bin/</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
