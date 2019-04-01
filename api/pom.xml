@@ -11,7 +11,7 @@
 
     <artifactId>api</artifactId>
     <packaging>jar</packaging>
-    <version>${project.version}</version>
+    <version>1.0</version>
 
     <name>api</name>
     <!-- FIXME change it to the project's website -->
