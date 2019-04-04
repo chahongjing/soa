@@ -10,8 +10,8 @@ public class HellowWordServiceImpl implements HelloWorldService {
 
     @Override
     public String getInfo(String name) {
-        System.out.println("server 2");
-        //mqProducer.sendTextMessage("这是一条新消息");
+        System.out.println("server 1");
+        mqProducer.sendTextMessage("这是一条新消息");
         return String.format("你好：%s！", name);
     }
 }

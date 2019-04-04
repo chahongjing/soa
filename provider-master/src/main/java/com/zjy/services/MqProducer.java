@@ -16,7 +16,7 @@ public class MqProducer {
     @Autowired
     private JmsTemplate jmsTemplate;
 
-    @Resource(name = "queueTextDestination")
+    @Resource
     private Destination destination;//配置文件applicationContext-jms-producer.xml点对点文本信息bean的id
 
     /**

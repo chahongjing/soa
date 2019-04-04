@@ -6,7 +6,7 @@
 
     <!-- 真正可以产生Connection的ConnectionFactory，由对应的 JMS服务厂商提供-->
     <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
-        <property name="brokerURL" value="tcp://127.0.0.1:61616"/>
+        <property name="brokerURL" value="${jms.broker}"/>
     </bean>
     <!-- Spring用于管理真正的ConnectionFactory的ConnectionFactory -->
     <bean id="connectionFactoryConsumer" class="org.springframework.jms.connection.SingleConnectionFactory">
@@ -14,12 +14,12 @@
         <property name="targetConnectionFactory" ref="targetConnectionFactory"/>
     </bean>
     <!--这个是队列目的地，点对点的  文本信息-->
-    <bean id="queueTextDestinationConsumer" class="org.apache.activemq.command.ActiveMQQueue">
-        <constructor-arg value="queue_text"/>
+    <bean id="destination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="${jms.queueName}"/>
     </bean>
     <!--这个是队列目的地，点对点的  文本信息-->
-    <!--<bean id="topicTextDestination" class="org.apache.activemq.command.ActiveMQTopic">-->
-    <!--<constructor-arg value="topic_text"/>-->
+    <!--<bean id="destination" class="org.apache.activemq.command.ActiveMQTopic">-->
+        <!--<constructor-arg value="${jms.topicName}"/>-->
     <!--</bean>-->
     <!-- 我的监听类 -->
     <bean id="myMessageListener" class="com.zjy.services.MqConsumer"></bean>
@@ -27,7 +27,7 @@
     <!-- 消息监听容器 -->
     <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="connectionFactoryConsumer"/>
-        <property name="destination" ref="queueTextDestinationConsumer"/>
+        <property name="destination" ref="destination"/>
         <property name="messageListener" ref="myMessageListener"/>
     </bean>
 </beans>
