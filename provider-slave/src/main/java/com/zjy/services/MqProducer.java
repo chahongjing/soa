@@ -17,7 +17,7 @@ public class MqProducer {
     private JmsTemplate jmsTemplate;
 
     @Resource
-    private Destination destination;//配置文件applicationContext-jms-producer.xml点对点文本信息bean的id
+    private Destination destination;
 
     /**
      * 发送文本消息

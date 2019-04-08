@@ -17,7 +17,7 @@ public class MqProducer {
     private JmsTemplate jmsTemplate;
 
     @Resource
-    private Destination destination;//配置文件applicationContext-jms-producer.xml点对点文本信息bean的id
+    private Destination destination;
 
     /**
      * 发送文本消息
@@ -25,12 +25,12 @@ public class MqProducer {
      * @param text
      */
     public void sendTextMessage(final String text) {
+        System.out.println("生产者发送消息：" + text);
         jmsTemplate.send(destination, new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
                 return session.createTextMessage(text);
             }
         });
-        System.out.println("生产者发送消息：" + text);
     }
 }
