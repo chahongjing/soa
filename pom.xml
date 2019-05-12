@@ -21,14 +21,14 @@
     <url>http://www.example.com</url>
 
     <properties>
-        <spring>5.1.5.RELEASE</spring>
-        <fastjson>1.2.56</fastjson>
+        <spring>5.1.7.RELEASE</spring>
+        <fastjson>1.2.58</fastjson>
         <zookeeper>3.4.13</zookeeper>
         <zkclient>0.1</zkclient>
-        <dubbo>2.5.3</dubbo>
+        <dubbo>2.6.6</dubbo>
         <jms>2.0.1</jms>
         <activemq>5.13.4</activemq>
-        <servlet>2.5</servlet>
+        <servlet>4.0.1</servlet>
         <junit>4.11</junit>
         <project.version>1.0</project.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
