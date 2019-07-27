@@ -24,7 +24,7 @@
         <spring>5.1.7.RELEASE</spring>
         <fastjson>1.2.58</fastjson>
         <zookeeper>3.4.13</zookeeper>
-        <zkclient>0.1</zkclient>
+        <zkclient>0.11</zkclient>
         <dubbo>2.6.6</dubbo>
         <jms>2.0.1</jms>
         <activemq>5.13.4</activemq>
@@ -74,7 +74,7 @@
                 <version>${zookeeper}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.sgroschupf</groupId>
+                <groupId>com.101tec</groupId>
                 <artifactId>zkclient</artifactId>
                 <version>${zkclient}</version>
             </dependency>
