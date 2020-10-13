@@ -29,7 +29,7 @@
         <jms>2.0.1</jms>
         <activemq>5.13.4</activemq>
         <servlet>4.0.1</servlet>
-        <junit>4.11</junit>
+        <junit>4.13.1</junit>
         <project.version>1.0</project.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
