@@ -25,7 +25,7 @@
         <fastjson>1.2.58</fastjson>
         <zookeeper>3.5.5</zookeeper>
         <zkclient>0.11</zkclient>
-        <dubbo>2.6.6</dubbo>
+        <dubbo>2.6.12</dubbo>
         <jms>2.0.1</jms>
         <activemq>5.13.4</activemq>
         <servlet>4.0.1</servlet>
