@@ -22,7 +22,7 @@
 
     <properties>
         <spring>5.1.7.RELEASE</spring>
-        <fastjson>1.2.58</fastjson>
+        <fastjson>1.2.83</fastjson>
         <zookeeper>3.5.5</zookeeper>
         <zkclient>0.11</zkclient>
         <dubbo>2.6.6</dubbo>
