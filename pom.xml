@@ -27,7 +27,7 @@
         <zkclient>0.11</zkclient>
         <dubbo>2.6.6</dubbo>
         <jms>2.0.1</jms>
-        <activemq>5.13.4</activemq>
+        <activemq>5.15.9</activemq>
         <servlet>4.0.1</servlet>
         <junit>4.11</junit>
         <project.version>1.0</project.version>
